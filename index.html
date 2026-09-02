@@ -314,7 +314,9 @@ body.menu-open .sheet__link{opacity:1;transform:none;transition:opacity var(--t-
   width:100%;
   text-transform:uppercase;
 }
-.hero__name .w{display:inline-flex;overflow:hidden;padding-block:.06em}
+.hero__name .w{display:inline-flex;overflow:hidden;padding:.06em .14em;margin-inline:-.14em}
+.hero__name .w:first-child{margin-left:0;padding-left:0}
+.hero__name .w:last-child{margin-right:0;padding-right:0}
 .hero__name .w span{display:block;transform:translateY(105%);will-change:transform}
 .hero__name .w--stroke span{color:transparent;-webkit-text-stroke:clamp(1px,.13vw,2.4px) var(--ink)}
 @supports not (-webkit-text-stroke:1px black){.hero__name .w--stroke span{color:var(--muted-2)}}
@@ -322,7 +324,7 @@ body.menu-open .sheet__link{opacity:1;transform:none;transition:opacity var(--t-
 /* portrait punches through the type */
 .hero__portrait{
   position:absolute;left:50%;bottom:0;transform:translateX(-50%);
-  z-index:3;height:clamp(300px,84vh,900px);width:auto;max-width:min(64vw,780px);
+  z-index:3;height:clamp(280px,62vh,640px);width:auto;max-width:min(48vw,540px);
   pointer-events:none;user-select:none;
   filter:drop-shadow(0 34px 64px rgba(12,12,12,.24));
   opacity:0;
